@@ -41,7 +41,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(inv)
   }
-  ## otherwise calcule it and store it in cache
+  ## otherwise calculate it and store it in cache
   data <- x$get()
   invMatrix <- solve(data, ...)
   x$setinverse(invMatrix)
